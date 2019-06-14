@@ -2,7 +2,9 @@
 
 Zahir=Away
 Farhanah=Away
+Hadeyah=Away
 
+macaddress=`wl -i eth1 assoclist`
 macaddress2=`wl -i eth2 assoclist`
 
 case "$macaddress" in
