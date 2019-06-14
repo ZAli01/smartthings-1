@@ -13,7 +13,19 @@ case "$macaddress" in
 	;;
 esac
 
+case "$macaddress2" in
+	*CC:C0:79:FE:2F:96*)
+	Zahir=Home
+	;;
+esac
+
 case "$macaddress" in
+	*CC:C0:79:42:27:C6*)
+	Hadeyah=Home
+	;;
+esac
+
+case "$macaddress2" in
 	*CC:C0:79:42:27:C6*)
 	Hadeyah=Home
 	;;
@@ -22,18 +34,6 @@ esac
 case "$macaddress" in
 	*A0:CC:2B:14:0E:57*)
 	Farhanah=Home
-	;;
-esac
-
-case "$macaddress2" in
-	*CC:C0:79:FE:2F:96*)
-	Zahir=Home
-	;;
-esac
-
-case "$macaddress2" in
-	*CC:C0:79:42:27:C6*)
-	Hadeyah=Home
 	;;
 esac
 
