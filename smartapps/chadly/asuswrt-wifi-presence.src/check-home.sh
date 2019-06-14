@@ -62,12 +62,14 @@ if [ "$Hadeyah" = Home ]
 then
 	if [ ! -f /jffs/scripts/users/hadeyah ]
 	then
-		touch /jffs/scripts/users/hadeyah
+	  touch /jffs/scripts/users/hadeyah
+	  curl "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/bad6ab3d-3155-4337-b9a2-ab8e5310c775/Phone/home?access_token=c7143b04-6ff3-4a43-a271-38142c331369" -k
 	fi
 else
 	if [ -f /jffs/scripts/users/hadeyah ]
 	then
-		rm -f /jffs/scripts/users/hadeyah
+	  rm -f /jffs/scripts/users/hadeyah
+	  curl "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/bad6ab3d-3155-4337-b9a2-ab8e5310c775/Phone/away?access_token=c7143b04-6ff3-4a43-a271-38142c331369" -k
 	fi
 fi
 
@@ -75,11 +77,13 @@ if [ "$farhanah" = Home ]
 then
 	if [ ! -f /jffs/scripts/users/farhanah ]
 	then
-		touch /jffs/scripts/users/farhanah
+	  touch /jffs/scripts/users/farhanah
+	  curl "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/1b0fc7a9-26b0-4d25-910b-6d05cd80ce85/Phone/home?access_token=5659ac8b-726b-43c9-9d0e-9279082e901f" -k
 	fi
 else
 	if [ -f /jffs/scripts/users/farhanah ]
 	then
-		rm -f /jffs/scripts/users/farhanah
+	  rm -f /jffs/scripts/users/farhanah
+	  curl "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/1b0fc7a9-26b0-4d25-910b-6d05cd80ce85/Phone/away?access_token=5659ac8b-726b-43c9-9d0e-9279082e901f" -k
 	fi
 fi
