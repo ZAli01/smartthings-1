@@ -32,13 +32,13 @@ case "$macaddress2" in
 esac
 
 case "$macaddress" in
-	*A0:CC:2B:14:0E:57*)
+	*40:0E:85:15:3F:27*)
 	Farhanah=Home
 	;;
 esac
 
 case "$macaddress2" in
-	*A0:CC:2B:14:0E:57*)
+	*40:0E:85:15:3F:27*)
 	Farhanah=Home
 	;;
 esac
