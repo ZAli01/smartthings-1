@@ -1,0 +1,415 @@
+login as: admin
+admin@192.168.1.1's password:
+
+
+ASUSWRT-Merlin RT-AC68U 384.11-2 Sat May 18 03:32:01 UTC 2019
+admin@RT-AC68U:/tmp/home/root# ls
+admin@RT-AC68U:/tmp/home/root# dir
+-sh: dir: not found
+admin@RT-AC68U:/tmp/home/root# cd bin
+-sh: cd: can't cd to bin
+admin@RT-AC68U:/tmp/home/root# cd ..
+admin@RT-AC68U:/tmp/home# cd ..
+admin@RT-AC68U:/tmp# ls
+allwclientlist.json    icon.ico               run_lldpd.sh
+asusfbsvcs             icon.large.ico         settings
+avahi                  inadyn.cache           share
+bwdpi                  lld2d.conf             sig_upgrade.log
+chanspec_all.json      mastiff.pid            syscmd.log
+chanspec_avbl.json     mastiff_log            syslog.log
+chanspec_avbl.txt      mnt                    udhcpc
+chanspec_private.json  nat_rules              udhcpc0.expires
+clientlist.json        nat_rules_eth0_eth0    update_url
+connect.log            nc                     upnp.leases
+ddns.cache             nmp_cache.js           usb.log
+dev                    notify                 var
+dhcp6c                 obstatus               wchannel.json
+etc                    obvsie                 webs_upgrade.log
+filter.default         ppp                    wiredclientlist.json
+filter_ipv6.default    redirect_rules         wlcnt.pid
+filter_rules           relist.json            wpa_cli
+home                   resolv.conf            wps_monitor.pid
+hw_auth_clm            resolv.dnsmasq         zcip
+admin@RT-AC68U:/tmp# cd ..
+admin@RT-AC68U:/# ls
+bin      dev      jffs     mmc      proc     sbin     tmp      www
+cifs1    etc      lib      mnt      rom      sys      usr
+cifs2    home     media    opt      root     sysroot  var
+admin@RT-AC68U:/# cd bin
+admin@RT-AC68U:/bin# ls
+ash               eapd              makemime          rstats
+booster           echo              mkdir             sed
+booster_watchdog  egrep             mknod             sh
+busybox           fgrep             more              sleep
+cat               fsync             mount             sync
+chmod             getopt            mv                tar
+chown             grep              netstat           touch
+comgt             gunzip            nice              true
+cp                gzip              pidof             umount
+cstats            hostname          ping              uname
+date              ionice            ping6             usleep
+dd                kill              ps                vi
+df                ln                pwd               watch
+dmesg             login             rm                wps_monitor
+dnsdomainname     ls                rmdir             zcat
+admin@RT-AC68U:/bin# cd sh
+-sh: cd: can't cd to sh
+admin@RT-AC68U:/bin# cd nice
+-sh: cd: can't cd to nice
+admin@RT-AC68U:/bin# cd .sh
+-sh: cd: can't cd to .sh
+admin@RT-AC68U:/bin# cd ./sh
+-sh: cd: can't cd to ./sh
+admin@RT-AC68U:/bin# cd ..
+admin@RT-AC68U:/# cd bin
+admin@RT-AC68U:/bin# cd sh
+-sh: cd: can't cd to sh
+admin@RT-AC68U:/bin# cd ..
+admin@RT-AC68U:/# ls
+bin      dev      jffs     mmc      proc     sbin     tmp      www
+cifs1    etc      lib      mnt      rom      sys      usr
+cifs2    home     media    opt      root     sysroot  var
+admin@RT-AC68U:/# cd jffs
+admin@RT-AC68U:/jffs# ls
+configs         scripts         syslog.log
+nmp_cl_json.js  signature       usericon
+admin@RT-AC68U:/jffs# cd scripts/
+admin@RT-AC68U:/jffs/scripts# vi
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# chmod 777
+BusyBox v1.25.1 (2019-05-17 23:32:00 EDT) multi-call binary.
+
+Usage: chmod [-R] MODE[,MODE]... FILE...
+
+Each MODE is one or more of the letters ugoa, one of the
+symbols +-= and one or more of the letters rwxst
+
+        -R      Recurse
+admin@RT-AC68U:/jffs/scripts# chmod 777 /jffs/scripts/CheckIfHome
+admin@RT-AC68U:/jffs/scripts# mkdir /jffs/scripts/CheckUser
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser
+admin@RT-AC68U:/jffs/scripts# vi Check
+CheckIfHome  CheckUser/
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi init-start
+admin@RT-AC68U:/jffs/scripts# vi init-start
+admin@RT-AC68U:/jffs/scripts# chmod 777 /jffs/scripts/init-start
+admin@RT-AC68U:/jffs/scripts# ./init-start
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# cd CheckUser/
+admin@RT-AC68U:/jffs/scripts/CheckUser# ls
+admin@RT-AC68U:/jffs/scripts/CheckUser# cd ..
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    init-start
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# ./init-start
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi init-start
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    init-start
+admin@RT-AC68U:/jffs/scripts# cd CheckUser/
+admin@RT-AC68U:/jffs/scripts/CheckUser# ls
+admin@RT-AC68U:/jffs/scripts/CheckUser# cd ..
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# cd CheckUser/
+admin@RT-AC68U:/jffs/scripts/CheckUser# ls
+admin@RT-AC68U:/jffs/scripts/CheckUser# cd ..
+admin@RT-AC68U:/jffs/scripts# ./init-start
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/CheckUser/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 08:55 .
+     0 drwxr-xr-x    3 admin    root             0 Jun 14 09:41 ..
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# ./CheckIfHome
+./CheckIfHome: line 14: qcsapi_sockrpc: not found
+[: 0: unknown operand
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts#
+admin@RT-AC68U:/jffs/scripts#
+admin@RT-AC68U:/jffs/scripts# vi CheckIfHome
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start
+admin@RT-AC68U:/jffs/scripts# mkdir users
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start   users
+admin@RT-AC68U:/jffs/scripts# ./check-home
+-sh: ./check-home: Permission denied
+admin@RT-AC68U:/jffs/scripts# chmod 777 check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+wl: wl driver adapter not found
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# wl -i eth1 assoclist
+assoclist CC:C0:79:FE:2F:96
+assoclist D0:E7:82:7C:3B:0E
+assoclist A0:20:A6:36:5D:57
+assoclist 5C:41:5A:69:0C:23
+assoclist 44:61:32:CC:2A:D7
+assoclist D0:13:FD:64:C7:CA
+assoclist AC:CF:23:07:26:C9
+assoclist F8:DA:0C:4E:BF:15
+assoclist 74:C6:3B:C7:4F:D5
+assoclist E8:AB:FA:88:50:EF
+admin@RT-AC68U:/jffs/scripts# wl -i eth2 assoclist
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start   users
+admin@RT-AC68U:/jffs/scripts# vi check-
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start   users
+admin@RT-AC68U:/jffs/scripts# cd users
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# cd ..
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start   users
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 10:30 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 10:30 zahir
+admin@RT-AC68U:/jffs/scripts# vi init-start
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 10:30 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 10:30 zahir
+admin@RT-AC68U:/jffs/scripts# wl -i eth1 assoclist
+assoclist 98:E7:F5:6D:20:AF
+assoclist D0:E7:82:7C:3B:0E
+assoclist A0:20:A6:36:5D:57
+assoclist 5C:41:5A:69:0C:23
+assoclist 44:61:32:CC:2A:D7
+assoclist D0:13:FD:64:C7:CA
+assoclist AC:CF:23:07:26:C9
+assoclist F8:DA:0C:4E:BF:15
+assoclist 74:C6:3B:C7:4F:D5
+assoclist E8:AB:FA:88:50:EF
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 10:30 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 10:30 zahir
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 10:30 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 10:30 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 10:30 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 10:30 zahir
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:04 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ./init-start
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:04 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:05 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:05 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:05 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:05 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:05 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:05 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:08 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:08 zahir
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:08 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:08 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:08 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:08 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:09 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:09 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:12 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:12 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:12 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:12 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:27 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:27 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:35 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:41 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:41 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 11:41 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 11:41 zahir
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 12:10 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 12:10 zahir
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 12:10 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 10:30 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 12:10 zahir
+admin@RT-AC68U:/jffs/scripts# mkdir hadeyah
+admin@RT-AC68U:/jffs/scripts# mkdir farhanah
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 12:10 .
+     0 drwxr-xr-x    6 admin    root             0 Jun 14 12:34 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 12:10 zahir
+admin@RT-AC68U:/jffs/scripts# mkdir farhanah
+mkdir: can't create directory 'farhanah': File exists
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 12:10 .
+     0 drwxr-xr-x    6 admin    root             0 Jun 14 12:34 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 12:10 zahir
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   farhanah     hadeyah      init-start   users
+admin@RT-AC68U:/jffs/scripts# rm farhanah
+rm: 'farhanah' is a directory
+admin@RT-AC68U:/jffs/scripts# rmdir farhanah
+admin@RT-AC68U:/jffs/scripts# rmdir hadeyah
+admin@RT-AC68U:/jffs/scripts# ls
+CheckIfHome  CheckUser    check-home   init-start   users
+admin@RT-AC68U:/jffs/scripts# cd users
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# vi hadeyah
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# touch /jffs/scripts/users/hadeyah
+admin@RT-AC68U:/jffs/scripts/users# ls
+hadeyah  zahir
+admin@RT-AC68U:/jffs/scripts/users# touch /jffs/scripts/users/farhanah
+admin@RT-AC68U:/jffs/scripts/users# ls
+farhanah  zahir
+admin@RT-AC68U:/jffs/scripts/users# ls
+farhanah  zahir
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# rm -f /jffs/scripts/users/zahir
+admin@RT-AC68U:/jffs/scripts/users# ls
+admin@RT-AC68U:/jffs/scripts/users# ls
+zahir
+admin@RT-AC68U:/jffs/scripts/users# ls
+admin@RT-AC68U:/jffs/scripts/users# ./check-home
+-sh: ./check-home: not found
+admin@RT-AC68U:/jffs/scripts/users# cd ..
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 16:57 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 16:57 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts#
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 16:57 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 16:57 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 14 23:52 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 23:52 hadeyah
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# wl -i eth1 assoclist
+assoclist A0:CC:2B:14:0E:57
+assoclist A0:20:A6:36:5D:57
+assoclist BC:DD:C2:31:00:7E
+assoclist 74:C6:3B:C7:4F:D5
+assoclist 44:61:32:CC:2A:D7
+assoclist E8:AB:FA:88:50:EF
+assoclist D0:E7:82:7C:3B:0E
+assoclist F8:DA:0C:4E:BF:15
+admin@RT-AC68U:/jffs/scripts# wl -i eth2 assoclist
+assoclist CC:C0:79:42:72:C6
+assoclist D0:13:FD:64:C7:CA
+assoclist 4C:66:41:AF:F0:8D
+assoclist CC:C0:79:FE:2F:96
+assoclist 04:03:D6:76:0B:5E
+assoclist CC:9E:A2:38:03:57
+admin@RT-AC68U:/jffs/scripts# vi check-home
+admin@RT-AC68U:/jffs/scripts# ./check-home
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 15 00:14 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 15 00:14 farhanah
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 23:52 hadeyah
+     0 -rw-rw-rw-    1 admin    root             0 Jun 14 16:57 zahir
+admin@RT-AC68U:/jffs/scripts# ls -als /jffs/scripts/users/
+     0 drwxrwxrwx    2 admin    root             0 Jun 15 18:23 .
+     0 drwxr-xr-x    4 admin    root             0 Jun 14 12:35 ..
+     0 -rw-rw-rw-    1 admin    root             0 Jun 15 17:19 farhanah
+     0 -rw-rw-rw-    1 admin    root             0 Jun 15 18:19 hadeyah
+     0 -rw-rw-rw-    1 admin    root             0 Jun 15 18:23 zahir
+admin@RT-AC68U:/jffs/scripts#
